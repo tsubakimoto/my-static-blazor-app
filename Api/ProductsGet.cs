@@ -22,7 +22,7 @@ namespace Api
             ILogger log)
         {
             var products = await productData.GetProducts();
-            return new OkObjectResult(productData);
+            return new OkObjectResult(products);
         }
     }
 }
